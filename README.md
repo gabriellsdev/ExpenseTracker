@@ -64,7 +64,7 @@ Siga os passos abaixo para configurar e executar o projeto em sua máquina:
 ### 1. Clonar o Repositório
 
 ```bash
-git clone https://github.com/LapizdaSilva/ExpenseTracker.git
+git clone https://github.com/gabriellsdev/ExpenseTracker.git
 cd ExpenseTracker
 ```
 
@@ -95,7 +95,3 @@ eas build -p android --profile preview
 ```bash
 eas build --platform android --local --profile preview
 ```
-
----
-
-Feito com 💙
