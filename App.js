@@ -88,11 +88,6 @@ function AppNavigator() {
 }
 
 export default function App() {
-  const [supabaseInitialized, setSupabaseInitialized] = useState(false);
-
-  useEffect(() => {
-    setSupabaseInitialized(true);
-  }, []);
 
   if (!supabaseInitialized) {
     return (
