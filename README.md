@@ -1,96 +1,96 @@
-# 📱 Credo
+# Credo
 
 [![React Native](https://img.shields.io/badge/React%20Native-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactnative.dev/)
+[![JavaScript](https://img.shields.io/badge/logo-javascript-blue?logo=javascript)]
 [![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.io/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 🌟 Sobre o Projeto
+## About the Project
 
-Este é o **Credo**, um aplicativo mobile de gestão financeira pessoal desenvolvido em **React Native**, com backend baseado em **Supabase** para autenticação e persistência de dados.
+This is **Credo**, a personal financial management mobile app built with **React Native**, using **Supabase** as the backend for authentication and data persistence.
 
-O projeto foi desenvolvido integralmente como parte do curso técnico em Desenvolvimento de Sistemas, com o objetivo de consolidar habilidades em desenvolvimento mobile, integrações full stack e design de interfaces.
+The project was developed entirely as part of a technical course in Systems Development, with the goal of consolidating skills in mobile development, full-stack integration, and UI design.
 
-## 🚀 Funcionalidades
+## Features
 
-O Credo oferece um conjunto robusto de funcionalidades para o controle financeiro:
+Credo offers a robust set of features for financial control:
 
-### 📊 Gestão Financeira
+### Financial Management
 
-- **Registro de Transações:** Adicione entradas e saídas com facilidade.
-- **Categorização:** Utilize categorias pré-definidas (ex.: Transporte, Alimentação, etc.).
-- **Detalhes da Operação:** Adicione descrição e valor para cada transação.
-- **Manutenção:** Edite e remova operações existentes.
-- **Visualização:** Listagem clara e organizada de todas as transações.
+- **Transaction Tracking:** Easily add income and expenses.
+- **Categorization:** Use predefined categories (e.g., Transport, Food, etc.).
+- **Operation Details:** Add descriptions and values for each transaction.
+- **Maintenance:** Edit and remove existing operations.
+- **Visualization:** Clear and organized list of all transactions.
 
-### 🗓️ Sistema de Lembretes
+### Reminder System
 
-- **Calendário Interativo:** Visualize dias com transações ou lembretes marcados.
-- **Filtro por Dia:** Exibição filtrada de operações e lembretes por dia.
-- **Status de Lembretes:** Filtros para lembretes ativos, inativos e todos.
-- **Agendamento:** Agendamento com dia e hora específicos.
-- **Notificações:** Notificações locais para lembretes.
+- **Interactive Calendar:** View days with scheduled transactions or reminders.
+- **Daily Filter:** Filtered view of operations and reminders by day.
+- **Reminder Status:** Filters for active, inactive, and all reminders.
+- **Scheduling:** Schedule with specific days and times.
+- **Notifications:** Local notifications for reminders.
 
-### ⚙️ Configurações
+### Settings
 
-- **Personalização:** Tema claro/escuro.
-- **Notificações:** Ativar/desativar notificações.
-- **Informações:** Acesso a informações do aplicativo.
+- **Customization:** Light/dark mode.
+- **Notifications:** Enable/disable notifications.
+- **Information:** Access to app information.
 
-### 👤 Autenticação e Segurança
+### Authentication
 
-- **Supabase Auth:** Registro e login de usuários.
-- **Persistência de Sessão:** Manutenção da sessão do usuário.
-- **Segurança:** Armazenamento seguro de dados.
+- **Supabase Auth:** User registration and login.
+- **Session Persistence:** User session maintenance.
 
-## 🧰 Tecnologias Utilizadas
+## Technologies Used
 
-| Categoria             | Tecnologia                 | Descrição                                                       |
-| :-------------------- | :------------------------- | :-------------------------------------------------------------- |
-| **Front-end**         | React Native, Expo         | Desenvolvimento mobile multiplataforma.                         |
-|                       | React Navigation           | Navegação entre telas.                                          |
-|                       | React Hook Form, Hooks     | Gerenciamento de formulários e estado.                          |
-|                       | Async Storage              | Armazenamento local de dados.                                   |
-| **Back-end / Infra**  | Supabase (Auth + Postgres) | Backend-as-a-Service, autenticação e banco de dados relacional. |
-|                       | Modelagem de Dados         | Estrutura de tabelas otimizada.                                 |
-|                       | Políticas de Acesso        | Regras de segurança e políticas de acesso.                      |
-| **Ferramentas e Dev** | WSL, Android SDK           | Configuração para builds Android e desenvolvimento local.       |
-|                       | Testes Manuais             | Testes manuais estruturados.                                    |
-|                       | Eslint/Prettier            | Ferramentas de linting e formatação de código (se aplicável).   |
+| Category | Technology | Description |
+| :--- | :--- | :--- |
+| **Front-end** | React Native, Expo | Cross-platform mobile development. |
+| | React Navigation | Screen navigation. |
+| | React Hook Form, Hooks | Form and state management. |
+| | Async Storage | Local data storage. |
+| **Back-end / Infra** | Supabase (Auth + Postgres) | Backend-as-a-Service, authentication, and relational database. |
+| | Data Modeling | Optimized table structure. |
+| | Access Policies | Security rules and access policies. |
+| **Tools & Dev** | WSL, Android SDK | Setup for Android builds and local development. |
+| | Manual Testing | Structured manual testing. |
+| | Eslint/Prettier | Linting and code formatting tools (if applicable). |
 
-## 🛠️ Como Rodar o Projeto
+## How to Run the Project
 
-Siga os passos abaixo para configurar e executar o projeto em sua máquina:
+Follow the steps below to set up and run the project on your machine:
 
-### 1. Clonar o Repositório
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/gabriellsdev/ExpenseTracker.git
 cd ExpenseTracker
 ```
 
-### 2. Instalar Dependências
+### 2. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Iniciar o Projeto
+### 3. Start the Project
 
 ```bash
 npx expo start
 ```
 
-## 📦 Build Android (APK / AAB)
+## Android Build (APK / AAB)
 
-Para gerar o build do aplicativo para Android, você pode usar o EAS (Expo Application Services) ou o build local:
+To generate the Android app build, you can use EAS (Expo Application Services) or run a local build:
 
-### Opção 1: Usando EAS
+### Option 1: Using EAS
 
 ```bash
 eas build -p android --profile preview
 ```
 
-### Opção 2: Build Local (Requer WSL/Android SDK configurado)
+### Option 2: Local Build (Requires WSL/Android SDK setup)
 
 ```bash
 eas build --platform android --local --profile preview
